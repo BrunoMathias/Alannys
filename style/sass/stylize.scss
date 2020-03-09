@@ -1,0 +1,393 @@
+$bg-color: #212121;
+$letter-color: #FFCB00;
+
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+header {
+    background-color: $bg-color;
+    height: 15vh;
+    width: 100%;
+    min-height: 80px;
+    padding: 0 20px;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    box-shadow: 0px -2px 20px #000;
+
+
+    .topo {
+        height: 100%;
+        position: relative;
+
+
+        .logo-header {
+            width: 20vw;
+            max-width: 200px;
+            min-width: 150px;
+            line-height: 15vh;
+            margin-top: 4vh;
+
+        }
+
+        .icones {
+            position: absolute;
+            top: 15px;
+            right: 0;
+
+            .icons {
+                max-width: 23px;
+            }
+
+        }
+
+    }
+
+    .btn-agd {
+        background: rgb(255, 203, 0);
+        background: linear-gradient(0deg, rgba(255, 203, 0, 1) 0%, rgba(255, 203, 0, 1) 65%, rgba(255, 234, 153, 1) 100%);
+        position: absolute;
+        right: 15px;
+        top: -15px;
+        border-radius: 30px;
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: bold;
+        z-index: 5555 !important;
+       
+            
+        
+        a {
+            color: $bg-color;
+            
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+    }
+
+
+
+}
+
+.carrousel {
+    height: 70vh;
+    width: 100%;
+    margin-top: 15vh;
+
+    .banner {
+        background: url('../imgs/background.jpg');
+        background-position: center;
+        /* Center the image */
+        background-repeat: no-repeat;
+        /* Do not repeat the image */
+        background-size: cover;
+        /* Resize the background image to cover the entire container */
+        height: 100%;
+        width: 100%;
+
+
+    }
+
+    .tema {
+        max-width: 450px;
+        position: absolute;
+        right: 10vw;
+        margin-top: 15vh;
+        padding-left: 20px;
+        //background: rgba(0, 0, 0, 0.473);
+        border-radius: 10px;
+
+        h1 {
+            color: $letter-color;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 30px;
+            color: #fff;
+            font-weight: 300;
+            line-height: 2;
+
+            strong {
+                font-weight: 800;
+            }
+
+        }
+
+    }
+}
+
+.content {
+    background-color: $bg-color;
+    padding-bottom: 100px;
+}
+
+#services {
+
+    padding: 70px 70px;
+    display: flex;
+
+
+    .linese {
+        height: 2px;
+        background: $letter-color;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .services-title {
+        width: 100%;
+        color: $letter-color;
+        font-weight: 200;
+        text-transform: uppercase;
+        font-size: 30px;
+        min-width: 306px;
+    }
+
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordione {
+    background-color: transparent;
+    color: $letter-color;
+    cursor: pointer;
+    padding: 18px;
+    width: 90%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 1s all;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.719);
+
+
+    img {
+        width: 30px;
+    }
+
+    h3 {
+        font-weight: 200;
+        text-transform: uppercase;
+        font-size: 20px;
+        display: inline-block;
+        padding-left: 30px;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+.panel {
+    padding: 20px 18px;
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: $letter-color;
+    border-bottom: 1px solid #ccc;
+
+
+
+    .shot-descri {
+        position: relative;
+
+
+        h5 {
+            font-size: 15px;
+            color: $letter-color;
+
+            &:after {
+                content: url(../imgs/shunf-down.png);
+                padding-left: 10px;
+            }
+        }
+
+        p {
+            font-size: 13px;
+
+            margin-right: 120px;
+            color: #ccc;
+            font-weight: 300;
+
+        }
+
+        button {
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            background: $letter-color;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            height: 30px;
+            &:hover{
+                transform: scale(1.05);
+                
+            }
+            
+            a{
+              
+                display: block;
+                line-height: 30px;
+                padding: 0 5px 0 5px;
+                margin-top: -7px;
+                color: $bg-color;
+
+                &:hover{
+                    text-decoration: none;
+
+                }
+
+
+            }
+        }
+
+    }
+
+}
+
+.card {
+    border: none;
+
+    .card-header {
+        border: none;
+        padding: 0;
+        background-color: transparent;
+
+    }
+
+    .collapsed {
+        .shot-descri {
+            h5 {
+                color: #ccc;
+            }
+        }
+    }
+}
+
+.accordione {
+    &:after {
+        content: url(../imgs/shunf-down.png);
+
+        width: 10px !important;
+
+        height: auto;
+        margin-left: 15px;
+        position: absolute;
+
+
+    }
+
+}
+
+.active {
+
+    &:after {
+        content: url(../imgs/shunf.png);
+
+    }
+}
+
+
+.locate {
+
+    background-image: url('../imgs/maps.png');
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+    height: 600px;
+    padding: 50px 0;
+}
+
+.fale-conosco {
+    background: #fff;
+    padding: 70px 50px;
+    border-radius: 5px;
+    max-width: 400px;
+    font-weight: 300;
+
+    .como-chega,
+    .enviar {
+        background: $letter-color;
+        font-weight: 800;
+    }
+
+    .funcionamento {
+        margin-top: 40px;
+    }
+
+    form {
+
+        line-height: 30px;
+    }
+
+    p {
+        line-height: 1;
+    }
+}
+
+footer {
+    padding: 30px 0;
+    background: $letter-color;
+
+    img {
+        width: 65px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .tema {
+        background: rgba(0, 0, 0, 0.473);
+        right: 0 !important;
+        
+        max-width: 100vw !important;
+        width: 100vw;
+        padding: 15px;
+        margin: 0;
+        text-align: center;
+
+    }
+
+    #services {
+        padding: 70px 10px;
+    }
+
+    .accordione {
+        width: 100%;
+
+        h3 {
+            font-size: 15px;
+        }
+    }
+
+    footer{
+
+        p{
+            font-size: 14px;
+        }
+
+    }
+
+}
