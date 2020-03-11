@@ -8,9 +8,8 @@ html {
 
 header {
   background-color: #212121;
-  height: 15vh;
+  height: 118px;
   width: 100%;
-  min-height: 80px;
   padding: 0 20px;
   position: fixed;
   z-index: 9;
@@ -22,11 +21,9 @@ header .topo {
   position: relative;
 }
 header .topo .logo-header {
-  width: 20vw;
-  max-width: 200px;
+  width: 100%;
+  max-width: 300px;
   min-width: 150px;
-  line-height: 15vh;
-  margin-top: 4vh;
 }
 header .topo .icones {
   position: absolute;
@@ -263,6 +260,12 @@ footer img {
 footer p {
   font-size: 20px;
   font-weight: 300;
+}
+
+.mostrar {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #00BCD4;
 }
 
 @media (max-width: 767px) {
